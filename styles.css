@@ -13,7 +13,7 @@ h1 {
   font-size: 30px;
   position: relative;
   margin-left: 50px;
-  bottom: 40px;
+  bottom: 5px;
   color: #e7dfd5;
   font-family: "Roboto", sans-serif;
 }
@@ -21,14 +21,14 @@ h1 {
   font-size: 30px;
   position: relative;
   margin-left: 50px;
-  bottom: 70px;
+  bottom: 30px;
   color: #e7dfd5;
   font-family: "Roboto", sans-serif;
 }
 button {
   position: relative;
   left: 1250px;
-  bottom: 210px;
+  bottom: 80px;
 }
 input {
   position: absolute;

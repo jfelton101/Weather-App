@@ -7,7 +7,7 @@ let days = [
   "WEDNESDAY",
   "THURSDAY",
   "FRIDAY",
-  "SATURDAY"
+  "SATURDAY",
 ];
 let months = [
   "JAN",
@@ -21,7 +21,7 @@ let months = [
   "SEPT",
   "OCT",
   "NOV",
-  "DEC"
+  "DEC",
 ];
 let now = new Date();
 let currentDate = now.getDate();
@@ -41,7 +41,7 @@ date.innerHTML = `${day}, ${month} ${currentDate}`;
 let time12Hr = now.toLocaleString("en-US", {
   hour: "numeric",
   minute: "numeric",
-  hour12: true
+  hour12: true,
 });
 let time = document.querySelector(".time");
 time.innerHTML = time12Hr;
