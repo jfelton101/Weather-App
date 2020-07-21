@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Notable&family=Open+Sans&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>
+        Atlanta
+      </h1>
+      <h3 class="date">
+        O6 | 24
+      </h3>
+      <br />
+      <h3 class="time">
+        4:56 PM
+      </h3>
+      <br />
+
+      <form id="search-form">
+        <input type="text" id="search-city" placeholder="Search city..." />
+        <input type="submit" value="Search" id="submit-search" />
+      </form>
+      <button>Get Current Location</button>
+      <i class="fa fa-sun-o" aria-hidden="true"></i>
+      <p class="currentTemp">
+        75
+      </p>
+      <p class="tempUnit" id="fahrenheit">°F</p>
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <p class="day-one">
+            O6 | 25 <br />
+            <i class="fa fa-bolt" aria-hidden="true"></i> <br />
+            <strong>8o°F</strong> | 66°F
+          </p>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <p class="day-one">
+            O6 | 26 <br />
+            <i class="fa fa-bolt" aria-hidden="true"></i> <br />
+            <strong>84°F</strong> | 67°F
+          </p>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <p class="day-one">
+            O6 | 27 <br />
+            <i class="fa fa-cloud" aria-hidden="true"></i> <br />
+            <strong>84°F</strong> | 69°F
+          </p>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <p class="day-one">
+            O6 | 28 <br />
+            <i class="fa fa-cloud" aria-hidden="true"></i> <br />
+            <strong>85°F</strong> | 69°F
+          </p>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <p class="day-one">
+            O6 | 29 <br />
+            <i class="fa fa-bolt" aria-hidden="true"></i> <br />
+            <strong>85°F</strong> | 69°F
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
