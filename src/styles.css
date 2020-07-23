@@ -27,7 +27,7 @@ h1 {
 button {
   position: relative;
   left: 1250px;
-  bottom: 210px;
+  bottom: 200px;
 }
 input {
   position: absolute;
@@ -87,4 +87,7 @@ input {
 .day-one:hover {
   border: 2px solid;
   opacity: 60%;
+}
+.footer {
+  color: grey;
 }
