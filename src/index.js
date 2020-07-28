@@ -65,8 +65,13 @@ function currentTemp(response) {
   let h1 = document.querySelector("h1");
   let temp = document.querySelector(".currentTemp");
   let temperature = Math.round(response.data.main.temp);
+  let iconElement = document.querySelector("#icon");
   temp.innerHTML = temperature;
   h1.innerHTML = response.data.name;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function retrieveCity(city) {
