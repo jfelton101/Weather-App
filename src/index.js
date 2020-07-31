@@ -79,7 +79,7 @@ function currentTemp(response) {
   h1.innerHTML = response.data.name;
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   descriptionElement.innerHTML = response.data.weather[0].description;
   windSpeedElement.innerHTML = `Wind Speed: ${Math.round(
@@ -99,7 +99,7 @@ function displayForecast(response) {
     <div class="col d-flex justify-content-center">
       <p class="day-one">
         ${formatHours(forecast.dt * 1000)} <br />
-        <img src="http://openweathermap.org/img/wn/${
+        <img src="https://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png" />
         <br />
@@ -116,7 +116,7 @@ function retrieveCity(city) {
   let url = `https://api.openweathermap.org/data/2.5/weather?&q=${city}&units=imperial&appid=${apiKey}`;
   axios.get(url).then(currentTemp);
 
-  url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+  url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(url).then(displayForecast);
 }
 
