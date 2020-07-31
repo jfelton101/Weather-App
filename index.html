@@ -25,7 +25,7 @@
   <body>
     <div class="content">
       <h1>
-        Atlanta
+        CITY
       </h1>
       <h3 class="date">
         O6 | 24
@@ -42,50 +42,18 @@
       </form>
       <button>Get Current Location</button>
       <img 
-      src='https://static.thenounproject.com/png/141499-200.png' 
+      src='http://openweathermap.org/img/wn/03d@2x.png' 
       id="icon"
       />
-
+<p id="description"> </p>
+<p id="wind-speed"> Wind Speed: 0 km/h</p>
+<p id="humidity">Humidity: 0%</p>
       <p class="currentTemp">
-        75
+        -
       </p>
-      <p class="tempUnit" id="fahrenheit">°F|°C</p>
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <p class="day-one">
-            O6 | 25 <br />
-              <img src="https://static.thenounproject.com/png/141499-200.png" id="icon1" /> <br />
-            <strong>8o°F</strong> | 66°F
-          </p>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <p class="day-one">
-            O6 | 26 <br />
-              <img src="https://static.thenounproject.com/png/141499-200.png" id="icon2" /> <br />
-            <strong>84°F</strong> | 67°F
-          </p>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <p class="day-one">
-            O6 | 27 <br />
-              <img src="https://static.thenounproject.com/png/141499-200.png" id="icon3" /> <br />
-            <strong>84°F</strong> | 69°F
-          </p>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <p class="day-one">
-            O6 | 28 <br />
-              <img src="https://static.thenounproject.com/png/141499-200.png" id="icon4" /> <br />
-            <strong>85°F</strong> | 69°F
-          </p>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <p class="day-one">
-            O6 | 29 <br />
-              <img src="https://static.thenounproject.com/png/141499-200.png" id="icon5" /> <br />
-            <strong>85°F</strong> | 69°F
-          </p>
-        </div>
+      <span class="tempUnit"><a href=# id="fahrenheit">°F </a> | <a href=# id="celsius">°C</a></span>
+      <div class="row" id="forecast"> 
+        
       </div>
     </div>
     <p class=footer><a href=https://github.com/jfelton101/Weather-App>Open Source Code</a> by Jordan Felton</p>
