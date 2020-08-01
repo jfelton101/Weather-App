@@ -25,7 +25,7 @@ let months = [
 ];
 
 function formatHours(timestamp) {
-  let now = new Date();
+  let now = new Date(timestamp);
   let currentDate = now.getDate();
   let month = months[now.getMonth()];
   let day = days[now.getDay()];
