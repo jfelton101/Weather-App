@@ -115,6 +115,8 @@ input {
 }
 .footer {
   color: grey;
+  text-align: right;
+  margin-right: 50px;
 }
 #fahrenheit {
   color: black;
