@@ -24,34 +24,28 @@ let months = [
   "DEC",
 ];
 
-function formatHours(timestamp) {
+function formatDate(timestamp) {
   let now = new Date(timestamp);
   let currentDate = now.getDate();
   let month = months[now.getMonth()];
   let day = days[now.getDay()];
-
-  //let currentHour = now.getHours();
-  //let currentMinutes = now.getMinutes();
-  //let ampm = "AM";
-  //if (currentHour >= 12) {
-  //ampm = "PM";
-
-  let date = document.querySelector(".date");
-  date.innerHTML = `${day}, ${month} ${currentDate}`;
-
+  return `${day}, ${month} ${currentDate}`;
+}
+function formatHours(timestamp) {
+  let now = new Date(timestamp);
   let time12Hr = now.toLocaleString("en-US", {
     hour: "numeric",
     minute: "numeric",
     hour12: true,
   });
-  let time = document.querySelector(".time");
-  time.innerHTML = time12Hr;
-
   return `${time12Hr}`;
 }
 
 let currentTime = new Date();
-formatHours(currentTime);
+let time = document.querySelector(".time");
+time.innerHTML = formatHours(currentTime);
+let date = document.querySelector(".date");
+date.innerHTML = formatDate(currentTime);
 
 function searchCity(event) {
   event.preventDefault();
