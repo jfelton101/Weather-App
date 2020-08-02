@@ -118,21 +118,17 @@ input {
   text-align: right;
   margin-right: 50px;
 }
-#fahrenheit {
-  color: black;
-}
-#fahrenheit:hover {
-  color: #0057b3;
-}
+
 #celsius {
   position: relative;
 }
 
 a {
-  cursor: default;
+  cursor: pointer;
   text-decoration: none;
-  color: #204051;
+  color: black;
 }
+
 a:hover {
   text-decoration: none;
   color: #0057b3;
