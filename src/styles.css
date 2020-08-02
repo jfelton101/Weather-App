@@ -121,6 +121,9 @@ input {
 #fahrenheit {
   color: black;
 }
+#fahrenheit:hover {
+  color: #0057b3;
+}
 #celsius {
   position: relative;
 }
